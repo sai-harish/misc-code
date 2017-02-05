@@ -105,12 +105,7 @@ void child(int *result) {
 
   pthread_create(&thread1,NULL,&child_thread_func,NULL);
   pthread_join(thread1,NULL);
-  /*for (int i = 0; i < 5; ++i) {
-    //strcpy(result, "child ::: hello parent\n");
-    usleep(2);
-    printf("child ::: %d\n", *result);
-  }
-  usleep(5);*/
+  
 }
 
 void parent(int *result) {
